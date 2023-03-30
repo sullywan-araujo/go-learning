@@ -2,12 +2,17 @@ package main
 
 import "fmt"
 
+const prefixOlaPt = "Olá, "
+
 func Hello(resultName string) string {
-	return "Olá, " + resultName
+	if resultName == "" {
+		resultName = "Mundo"
+	}
+	return prefixOlaPt + resultName
 }
 
 func WaitHello(waitName string) string {
-	return "Olá, " + waitName
+	return prefixOlaPt + waitName
 }
 
 func main() {
