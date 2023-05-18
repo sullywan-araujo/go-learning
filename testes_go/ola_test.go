@@ -1,4 +1,4 @@
-package main
+package ola
 
 import "testing"
 
@@ -18,7 +18,7 @@ func TestOla(t *testing.T) {
 
 	t.Run("'Mundo' como padrão para 'string' vazia", func(t *testing.T) {
 		resultado := Hello("")
-		esperado := WaitHello("Mundo")
+		esperado := WaitHello("Bruna")
 		verificaMensagemCorreta(t, resultado, esperado)
 	})
 
