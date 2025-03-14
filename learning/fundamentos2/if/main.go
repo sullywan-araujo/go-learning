@@ -23,4 +23,13 @@ func main() {
 	} else {
 		fmt.Println("verdadeiro")
 	}
+
+	// INSTANCIANDO VARIAVEL NO IF
+	if retornoTest := test(); retornoTest == "qlqrCoisa" {
+		fmt.Println("retorno verdadeiro")
+	}
+}
+
+func test() string {
+	return "qlqrCoisa"
 }
