@@ -25,7 +25,7 @@ func main() {
 	}
 
 	// INSTANCIANDO VARIAVEL NO IF
-	if retornoTest := test(); retornoTest == "qlqrCoisa" {
+	if retornoTest := test(); retornoTest == "qlqrCoisa" { // a variavel instanciada não vai funcionar fora do 'if'
 		fmt.Println("retorno verdadeiro")
 	}
 }
