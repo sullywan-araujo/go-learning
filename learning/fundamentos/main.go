@@ -76,8 +76,9 @@ func main() {
 	//STRUCT
 
 	var user User = User{
-		Name: "Sullywan",
-		Age:  40,
+		Name:     "Sullywan",
+		LastName: "Araujo",
+		Age:      40,
 	}
 
 	fmt.Println(user)
@@ -99,6 +100,7 @@ func funcPriv() {
 //STRUCT
 
 type User struct {
-	Name string
-	Age  int
+	Name     string
+	LastName string
+	Age      int
 }
