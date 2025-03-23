@@ -6,6 +6,13 @@ import (
 )
 
 func main() {
+	//=====================================================
+	// 'for' comum
+
+	for i := 0; i <= 5; i++ {
+		fmt.Println(i)
+	}
+
 	/*nums := []int{10, 20, 30}
 
 	for i := 0; i < len(nums); i++ {
@@ -17,7 +24,7 @@ func main() {
 
 	//=====================================================
 	// for com range
-	// Nesse caso não entra em um looping infinito, pois a função 'range' cria uma cópia do slice para fazer a condição,
+	// Nesse caso não entra em um looping infinito, pois a função 'range' cria uma cópia do slice para verificar a condição,
 	// ou seja, no caso abaixo temos 3 elementos e mesmo que seja acrescentado elementos ao slice, a clausula 'range' não considera os elementos
 	// na verificação da condição da cláusula;
 
