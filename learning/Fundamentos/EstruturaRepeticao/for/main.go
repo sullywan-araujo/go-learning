@@ -79,7 +79,7 @@ func main() {
 	}
 
 	sort.Slice(trs, func(i, j int) bool {
-		return pag[trs[i]] < pag[trs[j]]
+		return pag[trs[i]] < pag[trs[j]] // acessa o valor do pagamento correspondente ao ID armazenado na posição i da slice.
 	})
 
 	for _, tr := range trs {
