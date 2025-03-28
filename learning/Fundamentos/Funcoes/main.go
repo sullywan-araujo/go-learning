@@ -6,6 +6,7 @@ import (
 
 	fr "github.com/learning/Fundamentos/Funcoes/FuncaoComRetorno"
 	fmr "github.com/learning/Fundamentos/Funcoes/FuncaoMultiRetorno"
+	fn "github.com/learning/Fundamentos/Funcoes/FuncaoRetornoNomeado"
 	fs "github.com/learning/Fundamentos/Funcoes/FuncaoSemRetorno"
 )
 
@@ -40,6 +41,17 @@ func main() {
 	}
 
 	fmt.Printf("Novo saldo atualizado: %2.f\n", novoSaldo)
+
+	//=================================================================
+	saldo, sucesso = fn.Transferir("João", "Maria", saldo, 250.00)
+
+	if sucesso {
+		fmt.Println("Transferência realizada com sucesso!")
+	} else {
+		fmt.Println("Saldo insuficiente para transferência.")
+	}
+
+	fmt.Printf("Saldo atualizado: %2.f", saldo)
 
 }
 
