@@ -8,6 +8,7 @@ import (
 	fmr "github.com/learning/Fundamentos/Funcoes/FuncaoMultiRetorno"
 	fn "github.com/learning/Fundamentos/Funcoes/FuncaoRetornoNomeado"
 	fs "github.com/learning/Fundamentos/Funcoes/FuncaoSemRetorno"
+	fv "github.com/learning/Fundamentos/Funcoes/FuncaoVariatica"
 )
 
 func main() {
@@ -52,6 +53,10 @@ func main() {
 	}
 
 	fmt.Printf("Saldo atualizado: %2.f", saldo)
+
+	//==================================================================
+	totalDepositos := fv.SomarValores(100.00, 320.03, 231.99)
+	fmt.Println("Total depositado:", totalDepositos)
 
 }
 
