@@ -9,3 +9,7 @@ func Saque(valor float64) {
 func Deposito(valor float64) {
 	fmt.Printf("Depósito de %.2f realizado com sucesso.\n", valor)
 }
+
+func ProcessarOperacao(valor float64, operacao func(float64)) {
+	operacao(valor)
+}
