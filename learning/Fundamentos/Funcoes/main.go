@@ -8,6 +8,7 @@ import (
 	fmr "github.com/learning/Fundamentos/Funcoes/FuncaoMultiRetorno"
 	fn "github.com/learning/Fundamentos/Funcoes/FuncaoRetornoNomeado"
 	fs "github.com/learning/Fundamentos/Funcoes/FuncaoSemRetorno"
+	fcv "github.com/learning/Fundamentos/Funcoes/FuncaoValor"
 	fv "github.com/learning/Fundamentos/Funcoes/FuncaoVariatica"
 )
 
@@ -57,6 +58,10 @@ func main() {
 	//==================================================================
 	totalDepositos := fv.SomarValores(100.00, 320.03, 231.99)
 	fmt.Println("Total depositado:", totalDepositos)
+
+	//==================================================================
+	fcv.ProcessarOperacao(200, fcv.Saque)
+	fcv.ProcessarOperacao(200, fcv.Deposito)
 
 }
 
