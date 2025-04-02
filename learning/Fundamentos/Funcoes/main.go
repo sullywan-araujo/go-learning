@@ -5,6 +5,7 @@ import (
 	"fmt"
 
 	fr "github.com/learning/Fundamentos/Funcoes/FuncaoComRetorno"
+	fm "github.com/learning/Fundamentos/Funcoes/FuncaoMetodo"
 	fmr "github.com/learning/Fundamentos/Funcoes/FuncaoMultiRetorno"
 	fn "github.com/learning/Fundamentos/Funcoes/FuncaoRetornoNomeado"
 	fs "github.com/learning/Fundamentos/Funcoes/FuncaoSemRetorno"
@@ -62,6 +63,15 @@ func main() {
 	//==================================================================
 	fcv.ProcessarOperacao(200, fcv.Saque)
 	fcv.ProcessarOperacao(200, fcv.Deposito)
+
+	//==================================================================
+	conta := fm.ContaBancaria{
+		Titular: "Sullywan",
+		Saldo:   10000.00,
+	}
+
+	conta.Depositar(20000.00)
+	fmt.Println("só para saber se deu certo.", conta)
 
 }
 
