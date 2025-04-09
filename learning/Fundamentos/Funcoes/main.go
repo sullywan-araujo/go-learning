@@ -71,7 +71,7 @@ func main() {
 	}
 
 	conta.Depositar(20000.00)
-	fmt.Println("só para saber se deu certo.", conta)
+	fmt.Println("só para saber se deu certo.", conta.Saldo)
 
 }
 
