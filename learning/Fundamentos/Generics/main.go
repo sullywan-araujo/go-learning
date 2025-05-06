@@ -19,6 +19,7 @@ type Ordenavel interface {
 	~int | ~float64 | ~string
 }
 
+// T é um parametro do tipo generico;
 func MaioCerto[T Ordenavel](a, b T) T {
 	if a > b {
 		return a
