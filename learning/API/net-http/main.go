@@ -7,8 +7,8 @@ import (
 
 func main() {
 	// Para implementarmos esse pacote é necessário startar o handler;
-	// Handler = atua como um manipulador de requisições;
-	// Handle = registra um handler, realiza o direcionamento da URI
+	// Handler = atua como um manipulador de requisições; realiza o tratamento dos endpoints;
+	// Handle = registra um handler, realiza o direcionamento da requisição
 	// HandleFunc = faz a conversão da função para um handler
 
 	http.Handle("/apihandler", MeuHandler{}) //localhost:8080/apihandler
@@ -24,6 +24,8 @@ func main() {
 type MeuHandler struct{}
 
 func (h MeuHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
+	w.Header().Set("Content-Type", "application-json")
+	w.WriteHeader(http.StatusOK)
 	w.Write([]byte("Olá, MeuHandler!"))
 }
 
