@@ -11,7 +11,7 @@ import (
 type User struct {
 	Name string `json:"name" validate:"required"`
 	Age  int    `json:"idade" validate:"required,min=0,max=150"`
-	Doc  string `json:"cpf"`
+	Doc  string `json:"cpf" validate:"required"`
 }
 
 func main() {
